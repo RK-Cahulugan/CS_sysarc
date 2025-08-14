@@ -1,0 +1,130 @@
+body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f84343, #800000, #000000);
+      background-size: 300% 300%;
+      animation: moveBG 20s ease infinite;
+      color: white;
+    }
+
+    
+
+
+
+    @keyframes moveBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+    .main-content {
+      flex: 1;
+      display: flex;
+    }
+
+    .left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Keeps text vertically centered */
+      align-items: center;
+      padding: 50px;
+      font-size: 24px;
+      line-height: 1.4;
+      position: relative; /* Allows absolute positioning of logo */
+    }
+
+    .logo-wrapper {
+      position: absolute; /* Place logo independently */
+      top: 20px; /* Adjust distance from top */
+      left: 20%;
+      transform: translateX(-50%); /* Center horizontally */
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logoname {
+      font-size: 12px;
+    }
+
+    .left-logo {
+      max-width: 80px;
+      height: auto;
+    }
+
+    .text-wrapper {
+      text-align: left;
+    }
+
+
+    .right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+
+    .login-container {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
+      width: 380px;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 12px;
+      background: #ca1e1e;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 5px;
+    }
+
+    .login-container button:hover {
+      background: #8b0e0e;
+    }
+
+    .toggle-form {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .toggle-form a {
+      color: blue;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    footer {
+      background: rgb(49, 49, 49);
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      backdrop-filter: blur(5px);
+    }
