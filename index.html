@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Community Service System</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+</head>
+
+<body>
+
+  <div class="main-content">
+    <!-- LEFT SIDE TEXT -->
+    <div class="left">
+  <!-- Logo container -->
+    <div class="logo-wrapper">
+      <img src="./img/Untitled99_20250814113949.png" alt="Logo" class="left-logo">
+      <span class="logoname">Global Reciprocal Colleges</span>
+    </div>
+
+  <!-- Text container -->
+    <div class="text-wrapper">
+      <h1>Student Community Service Portal</h1>
+        <p>Monitor your hours, manage your schedule, and never miss an update!</p>
+    </div>
+  </div>
+
+
+    <!-- RIGHT SIDE LOGIN/REGISTER FORM -->
+    <div class="right">
+      <div class="login-container" id="form-container">
+        <!-- LOGIN FORM -->
+        <div id="login-form">
+          <h2>Login</h2>
+          <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+          </form>
+          <div class="toggle-form">
+            Don't have an account? <a onclick="showRegister()">Register</a>
+          </div>
+        </div>
+
+        <!-- REGISTER FORM -->
+        <div id="register-form" style="display:none;">
+          <h2>Register</h2>
+          <form>
+            <input type="text" placeholder="Last Name" required>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Username" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Student Number" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <button type="submit">Register</button>
+          </form>
+          <div class="toggle-form">
+            Already have an account? <a onclick="showLogin()">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; <span id="year"></span> Global Reciprocal Colleges. All rights reserved.
+  </footer>
+  <script src="./function.js"></script>
+</body>
+</html>
+
+</html>
