@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance</title>
+  <link rel="stylesheet" href="./attedancesheet.css">
+</head>
+<body>
+  <div class="attendance-box">
+    <h2>Attendance</h2>
+    <input type="text" id="studentId" placeholder="Enter Student ID" required>
+    <br>
+    <button onclick="submitAttendance()">Submit</button>
+
+    <div class="info" id="studentInfo" style="display:none;">
+      <h3>Student Info</h3>
+      <table>
+        <tr>
+          <th>Name</th>
+          <td id="name"></td>
+        </tr>
+        <tr>
+          <th>Course</th>
+          <td id="course"></td>
+        </tr>
+        <tr>
+          <th>Year Level</th>
+          <td id="year"></td>
+        </tr>
+        <tr>
+          <th>Status</th>
+          <td id="status"></td>
+        </tr>
+        <tr>
+          <th>Time In</th>
+          <td id="timein"></td>
+        </tr>
+        <tr>
+          <th>Time Out</th>
+          <td id="timeout"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script src="./attendacefunc.js"></script>
+</body>
+</html>
